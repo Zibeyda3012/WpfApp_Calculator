@@ -30,7 +30,7 @@
 
         </Grid>
 
-        <Label Grid.Row="1" Content="0" FontSize="35" VerticalAlignment="Center" HorizontalAlignment="Right"/>
+        <Label Grid.Row="1" Content="0" FontSize="35" VerticalAlignment="Center" HorizontalAlignment="Right" Name="TextLabel"/>
         
 
         <Grid Grid.Row="2">
@@ -70,31 +70,31 @@
             </Grid.ColumnDefinitions>
 
             <Button Grid.Row="0" Grid.Column="0" Content="%" FontSize="19"/>
-            <Button Grid.Row="0" Grid.Column="1" Content="√" FontSize="19"/>
-            <Button Grid.Row="0" Grid.Column="2" Content="x^2" FontSize="19"/>
-            <Button Grid.Row="0" Grid.Column="3" Content="1/x" FontSize="19"/>
-            <Button Grid.Row="1" Grid.Column="0" Content="CE" FontSize="19"/>
-            <Button Grid.Row="1" Grid.Column="1" Content="C" FontSize="19"/>
+            <Button Grid.Row="0" Grid.Column="1" Content="√" FontSize="19" Name="sqrt_btn"/>
+            <Button Grid.Row="0" Grid.Column="2" Content="x^2" FontSize="19" Name="power_btn"/>
+            <Button Grid.Row="0" Grid.Column="3" Content="1/x" FontSize="19" Name="inverse_btn"/>
+            <Button Grid.Row="1" Grid.Column="0" Content="CE" FontSize="19" Name="clear_btn1" Click="clear_btn1_Click"/>
+            <Button Grid.Row="1" Grid.Column="1" Content="C" FontSize="19" Name="clear_btn2" Click="clear_btn2_Click"/>
             <Button Grid.Row="1" Grid.Column="2" FontSize="19">
-                <Image Source="/Pictures/del2.png" Width="23" />
+                <Image Source="/Pictures/del2.png" Width="23" Name="del_btn" />
             </Button>
-            <Button Grid.Row="1" Grid.Column="3" Content="÷" FontSize="20"/>
-            <Button Grid.Row="2" Grid.Column="0" Content="7" FontSize="19" Background="White"/>
-            <Button Grid.Row="2" Grid.Column="1" Content="8" FontSize="19" Background="White"/>
-            <Button Grid.Row="2" Grid.Column="2" Content="9" FontSize="19" Background="White"/>
-            <Button Grid.Row="2" Grid.Column="3" Content="×" FontSize="20"/>
-            <Button Grid.Row="3" Grid.Column="0" Content="4" FontSize="19" Background="White"/>
-            <Button Grid.Row="3" Grid.Column="1" Content="5" FontSize="19" Background="White"/>
-            <Button Grid.Row="3" Grid.Column="2" Content="6" FontSize="19" Background="White"/>
-            <Button Grid.Row="3" Grid.Column="3" Content="-" FontSize="20"/>
-            <Button Grid.Row="4" Grid.Column="0" Content="1" FontSize="19" Background="White"/>
-            <Button Grid.Row="4" Grid.Column="1" Content="2" FontSize="19" Background="White"/>
-            <Button Grid.Row="4" Grid.Column="2" Content="3" FontSize="19" Background="White"/>
-            <Button Grid.Row="4" Grid.Column="3" Content="+" FontSize="20"/>
-            <Button Grid.Row="5" Grid.Column="0" Content="±" FontSize="20"/>
-            <Button Grid.Row="5" Grid.Column="1" Content="0" FontSize="19" Background="White"/>
-            <Button Grid.Row="5" Grid.Column="2" Content="," FontSize="19"/>
-            <Button Grid.Row="5" Grid.Column="3" Content="=" FontSize="20"/>
+            <Button Grid.Row="1" Grid.Column="3" Content="÷" FontSize="20" Name="div_btn"/>
+            <Button Grid.Row="2" Grid.Column="0" Content="7" FontSize="19" Background="White" Name="seven_btn" Click="btn_click"/>
+            <Button Grid.Row="2" Grid.Column="1" Content="8" FontSize="19" Background="White" Name="eight_btn" Click="btn_click" />
+            <Button Grid.Row="2" Grid.Column="2" Content="9" FontSize="19" Background="White" Name="nine_btn" Click="btn_click"/>
+            <Button Grid.Row="2" Grid.Column="3" Content="×" FontSize="20" Name="mult_btn" Click="btn_click"/>
+            <Button Grid.Row="3" Grid.Column="0" Content="4" FontSize="19" Background="White" Name="four_btn" Click="btn_click"/>
+            <Button Grid.Row="3" Grid.Column="1" Content="5" FontSize="19" Background="White" Name="five_btn" Click="btn_click"/>
+            <Button Grid.Row="3" Grid.Column="2" Content="6" FontSize="19" Background="White" Name="six_btn" Click="btn_click"/>
+            <Button Grid.Row="3" Grid.Column="3" Content="-" FontSize="20" x:Name="minus_btn" Click="btn_click"/>
+            <Button Grid.Row="4" Grid.Column="0" Content="1" FontSize="19" Background="White" Name="one_btn" Click="btn_click"/>
+            <Button Grid.Row="4" Grid.Column="1" Content="2" FontSize="19" Background="White" Name="two_btn" Click="btn_click"/>
+            <Button Grid.Row="4" Grid.Column="2" Content="3" FontSize="19" Background="White" Name="three_btn" Click="btn_click"/>
+            <Button Grid.Row="4" Grid.Column="3" Content="+" FontSize="20" Name="plus_btn" Click="btn_click"/>
+            <Button Grid.Row="5" Grid.Column="0" Content="±" FontSize="20" />
+            <Button Grid.Row="5" Grid.Column="1" Content="0" FontSize="19" Background="White" Name="zero_btn" Click="btn_click"/>
+            <Button Grid.Row="5" Grid.Column="2" Content="." FontSize="19" Name="comma" Click="btn_click"/>
+            <Button Grid.Row="5" Grid.Column="3" Content="=" FontSize="20" Name="equality" Click="equality_Click"/>
 
         </Grid>
 
